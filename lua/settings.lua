@@ -22,12 +22,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.cmd("colorscheme nightfox")
 
-require("neo-tree").setup({
-    window = {
-        width = 30,  -- Adjust the width of the panel (default is 40)
-        mapping = {
-            -- Your custom key mappings can go here
-        }
-    },
+require("lspconfig").emmet_ls.setup({
+    filetypes = { "html", "css", "typescript", "typescriptreact", "javascriptreact" },
 })
 
